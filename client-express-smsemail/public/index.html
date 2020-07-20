@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body style="background-color: aliceblue;">
+      
+    <div class="card" style="width: 40rem; position: relative; left: 30%; top: 150px;">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <button class="nav-link active" id="optSms" onclick="optSms()">Sms</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="optEmail" onclick="optEmail()">Email</button>
+            </li>
+            </ul>
+        </div>
+        <div class="card-body">
+
+            <div class="sms" id="crdSms" style="position: relative; left: 10%;">
+                <div class="card text-white bg-info mb-3" style="max-width: 30rem;">
+                    <div class="card-header">Send a Sms</div>
+                    <div class="card-body">
+                        <div class="">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">To</span>
+                                </div>
+                                <input type="text" id="txtSmsTo" class="form-control" placeholder="Phone number" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                                    
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Body</span>
+                                </div>
+                                <textarea id="txtSmsBody" class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button type="button" onclick="sendSms()" class="btn btn-success" style="position: relative; left: 70%;">Send</button>
+            </div>
+    
+            <div class="email d-none" id="crdEmail" style="position: relative; left: 10%;">
+                <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+                <div class="card-header">Send an Email</div>
+                    <div class="card-body">
+                        <div class="">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Email@smtg.com</span>
+                                </div>
+                                <input type="text" id="txtEmailTo" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Subject</span>
+                                </div>
+                                <input type="text" id="txtEmailSubj" class="form-control" placeholder="Subject" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                                    
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Body</span>
+                                </div>
+                                <textarea id="txtEmailBody" class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" onclick="sendEmail()" class="btn btn-success" style="position: relative; left: 70%;">Send</button>
+            </div>
+        </div>
+    </div>
+
+
+      
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
